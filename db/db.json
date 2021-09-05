@@ -1,33 +1,14 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text"
+      "title": "Note Example 2",
+      "text": "MOre text here",
+      "id": "50285746-4a88-4662-9a55-80d8b780e990"
     },
     {
-      "title": "Somthing testing",
-      "text": "Testing some text right here.",
-      "id": "ad4d0ad8-8a42-4f9d-ade9-1ff3a9294ad4"
-    },
-    {
-      "title": "New Test",
-      "text": "Some new tzaksfjl",
-      "id": "8a34fd5c-e8bd-49d5-a295-868f0c016149"
-    },
-    {
-      "title": "fasdf",
-      "text": "asdfas",
-      "id": "72dc9b41-5e04-45db-a37a-02f8e79d424a"
-    },
-    {
-      "title": "fasdf",
-      "text": "asdfas",
-      "id": "a5df5396-f88f-4ac2-81a9-fcd5e035fc84"
-    },
-    {
-      "title": "new note",
-      "text": "blah blahblah\n",
-      "id": "09300c4b-9174-4ba8-bbe0-56fa59b84ee1"
+      "title": "Another note 1",
+      "text": "Not the first note 1, but a good one nonetheless.",
+      "id": "bee17f0a-ce2e-47bf-b896-916f91b1d700"
     }
   ]
 }

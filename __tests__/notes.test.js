@@ -5,7 +5,9 @@ const {notes} = require('../db/db.json');
 
 const {
     createNewNote,
-    validateNote
+    validateNote,
+    findById,
+    deleteObject
 } = require("../lib/notes");
 
 jest.mock('fs');
@@ -32,3 +34,50 @@ test("validates note properties", () => {
     expect(result2).toBe(false);
 });
 
+test("finds by id", () => {
+    const startingNotes = [
+        {
+            id: "pf98",
+            title: "Something Stupid",
+            text: "Remeber to do something stupid today",
+        },
+        {
+            id: "prgt24",
+            title: "Another Note",
+            text: "Some text goes here.",
+        }
+    ];
+      
+        const result = findById("pf98", startingNotes);
+        const result2 = findById("prgt24", startingNotes);
+        expect(result.title).toBe("Something Stupid");
+        expect(result2.title).toBe("Another Note");
+        expect(result.text).toBe("Remeber to do something stupid today");
+      });
+     
+      test("deletes object by id", () => {
+        const startingNotes = [
+            {
+                id: "pf98",
+                title: "Something Stupid",
+                text: "Remeber to do something stupid today",
+            },
+            {
+                id: "prgt24",
+                title: "Another Note",
+                text: "Some text goes here.",
+            },
+            {
+                id: "prgt25",
+                title: "Another Note 2",
+                text: "Some different text goes here.",
+            }
+        ];
+          
+            const result = deleteObject( 1, startingNotes);
+            expect(result[0].title).toBe("Something Stupid");
+            expect(result[1].title).toBe("Another Note 2");
+            
+          });
+         
+          
