@@ -9,6 +9,11 @@
       "title": "Another note 1",
       "text": "Not the first note 1, but a good one nonetheless.",
       "id": "bee17f0a-ce2e-47bf-b896-916f91b1d700"
+    },
+    {
+      "title": "Note 4",
+      "text": "Even more text.",
+      "id": "1f2241bd-99d7-48b7-8bef-f06c1a789b6b"
     }
   ]
 }
